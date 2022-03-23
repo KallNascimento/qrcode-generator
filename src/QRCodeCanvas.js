@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import QRCode from 'qrcode'
 
-export default function QRCodeCanvas({ value,imageURL }) {
+export default function QRCodeCanvas({ value, imageURL }) {
 
     const canvasRef = useRef();
     const imageRef = useRef();
@@ -16,7 +16,9 @@ export default function QRCodeCanvas({ value,imageURL }) {
 
     return (
         <div>
-            <canvas id="canvas" ref={canvasRef}></canvas>
+            <a href={imageURL}>
+                <canvas id="canvas" ref={canvasRef}></canvas>
+            </a>
         </div>
     )
 }

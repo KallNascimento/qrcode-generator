@@ -19,8 +19,9 @@ function App() {
         placeholder="Digite ou cole o link"
       ></input>
       <QRCodeCanvas value={value}></QRCodeCanvas>
+      <p>Click com o botão direito e depois em "Salvar imagem como".</p>
       {/* <button type='submit'>Gerar</button> */}
-      <p>Toque no QR Code para salvar</p>
+      {/* <p>Toque no QR Code para salvar</p> */}
       <h3>By: Kauê</h3>
       </div>
       
