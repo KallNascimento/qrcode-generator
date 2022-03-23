@@ -1,15 +1,53 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+body{
+  font-family: 'comfortaa',cursive;
+  background-color: #61A4BC;
+  color: #fff
+}
+.App{
+  display: flex;
+  justify-content: center;
+
+}
+.Container {
   text-align: center;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5B7DB1;
+  min-width: 40%;
+  border-radius: 30px;
+}
+.Container h1 {
+  margin-bottom: 50px;
+  font-weight: bold;
 }
 
 input {
   height: 30px;
-  width: 30%;
+  width: 80%;
   font-size: 20px;
   border: 1px dashed #61A4BC;
+  margin: 15px 0 15px 0;
+  padding: 5px 5px 5px 5px;
 }
-
+button{
+  color: aliceblue;
+  background-color: #4D96FF;
+  width: 140px;
+  height: 40px;
+  border-radius: 5%;
+  font-size: 25px;
+  border-style: none;
+}
+button :hover{
+  background-color: azure;
+  color: #282c34;
+  cursor: hand;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
